@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Healthy Eating App</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header a {
+            text-decoration: none;
+            color: #555;
+            font-size: 24px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .content-section h3 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .content-section p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">🏠</a>
+        </div>
+        <h2>About</h2>
+
+        <div class="content-section">
+            <h3>APP purpose:</h3>
+            <p>
+                The purpose of this app is to help you make informed decisions about your diet and health. By scanning product ingredients, searching for specific components, or researching health topics, you can get personalized advice based on your body and any health conditions you have.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h3>How to use the app:</h3>
+            <p>
+                To get started, navigate to the **'My Body'** section to input your personal information and health conditions. This allows the app to provide tailored advice. Use the **'Scan'** feature to take a picture of an ingredient list and get an immediate health assessment. You can also **'Search'** for ingredients individually or **'Research'** general health and nutrition topics.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
