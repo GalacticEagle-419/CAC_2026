@@ -1,0 +1,217 @@
+/* === GLOBAL STYLES === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #B8DBD9; /* soft aqua background */
+    color: #1E2D2F; /* dark slate text */
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(36, 25, 9, 0.2); /* warm dark shadow */
+}
+
+/* === HEADERS === */
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 0;
+    color: #1E2D2F; /* strong slate */
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #568259; /* healthy green */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #241909; /* warm brown */
+}
+
+/* === BUTTONS === */
+.app-button,
+.confirm-button,
+.enter-conditions-button,
+.sex-button,
+.expand-button {
+    padding: 14px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #568259; /* green primary */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.2s;
+    display: block;
+}
+
+.app-button:hover,
+.confirm-button:hover,
+.enter-conditions-button:hover,
+.sex-button:hover,
+.expand-button:hover {
+    background-color: #1E2D2F;
+    transform: translateY(-2px);
+}
+
+.app-button:active,
+.confirm-button:active,
+.enter-conditions-button:active,
+.sex-button:active,
+.expand-button:active {
+    background-color: #241909;
+    transform: translateY(0);
+}
+
+/* Special case: unselected sex-button */
+.sex-button {
+    background-color: #D3D4CC;
+    color: #241909;
+}
+.sex-button.selected {
+    background-color: #568259;
+    color: #fff;
+}
+
+/* === INPUTS === */
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #D3D4CC;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #EDCDBF; /* warm beige */
+    color: #1E2D2F;
+}
+
+input::placeholder {
+    color: #241909;
+    opacity: 0.6;
+}
+
+/* === SEARCH BAR === */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #568259;
+    border-radius: 25px;
+    padding: 8px 14px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    flex-grow: 1;
+    color: #1E2D2F;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #568259;
+    margin-left: 10px;
+}
+
+/* === LISTS === */
+.ingredient-item {
+    display: block;
+    padding: 14px;
+    border-bottom: 1px solid #D3D4CC;
+    color: #241909;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+
+.ingredient-item:hover {
+    background-color: #EDCDBF;
+}
+
+/* === SPECIAL UI ELEMENTS === */
+.camera-window {
+    width: 100%;
+    height: 280px;
+    background-color: #1E2D2F;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B8DBD9;
+    margin-bottom: 20px;
+}
+
+.camera-window-content {
+    padding: 20px;
+    border: 2px dashed #B8DBD9;
+    text-align: center;
+}
+
+/* Health bar */
+.health-bar {
+    flex-grow: 1;
+    height: 15px;
+    background: linear-gradient(to right, #f44336, #ffeb3b, #568259);
+    border-radius: 8px;
+    position: relative;
+    margin: 0 10px;
+}
+
+.health-bar-indicator {
+    position: absolute;
+    height: 25px;
+    width: 5px;
+    background-color: #241909;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+}
+
+/* Nutrition bars */
+.nutrition-bar-container {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #D3D4CC;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nutrition-bar {
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Tags */
+.tag {
+    padding: 8px 12px;
+    border: 1px solid #568259;
+    border-radius: 20px;
+    background-color: #EDCDBF;
+    color: #241909;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tag:hover {
+    background-color: #568259;
+    color: #fff;
+}
