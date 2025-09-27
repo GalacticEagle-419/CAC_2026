@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Conditions</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header a {
+            text-decoration: none;
+            color: #555;
+            font-size: 24px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 5px;
+        }
+        .search-icon {
+            font-size: 20px;
+            color: #888;
+            margin-left: 10px;
+        }
+        .conditions-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .condition-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .condition-item:first-child {
+            border-top: 1px solid #eee;
+        }
+        .condition-name {
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+        }
+        .select-button {
+            padding: 8px 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: #e9e9e9;
+            color: #555;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .select-button.selected {
+            background-color: #dcdcdc;
+            font-weight: bold;
+        }
+        .select-button:hover {
+            background-color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">🏠</a>
+            <a href="my-body.html">🔙</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Conditions...">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="conditions-list">
+            <div class="condition-item">
+                <a href="condition-x.html" class="condition-name">Diabetes</a>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="condition-item">
+                <span class="condition-name">Prediabetes</span>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="condition-item">
+                <span class="condition-name">High Cholesterol</span>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="condition-item">
+                <span class="condition-name">High Stroke Risk</span>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="condition-item">
+                <span class="condition-name">...</span>
+                <button class="select-button">Select</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.select-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const isSelected = button.classList.toggle('selected');
+                button.textContent = isSelected ? 'Deselect' : 'Select';
+            });
+        });
+    </script>
+</body>
+</html>
