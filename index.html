@@ -1,22 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy Eating App</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Eating App</title>
+  <style>
+    /* === GLOBAL STYLES === */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(160deg, #B8DBD9 0%, #EDCDBF 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #1E2D2F;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 24px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    /* === HEADER === */
+    h1 {
+      font-size: 32px;
+      margin: 0 0 8px;
+      color: #1E2D2F;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #241909;
+      margin-bottom: 32px;
+    }
+
+    /* === BUTTONS === */
+    .button-container {
+      display: grid;
+      gap: 16px;
+    }
+
+    .app-button {
+      display: block;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 14px;
+      text-decoration: none;
+      background: #568259;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(36, 25, 9, 0.2);
+      transition: transform 0.2s, background-color 0.25s;
+    }
+
+    .app-button:hover {
+      background-color: #446746;
+      transform: translateY(-2px);
+    }
+
+    .app-button:active {
+      transform: translateY(0);
+      background-color: #2f4b2f;
+    }
+
+    /* === COLOR VARIANTS === */
+    #scan-button { background: linear-gradient(135deg, #568259, #3e6140); }
+    #search-button { background: linear-gradient(135deg, #1E2D2F, #3b4d50); }
+    #research-button { background: linear-gradient(135deg, #EDCDBF, #d6b5a6); color: #241909; }
+    #my-body-button { background: linear-gradient(135deg, #B8DBD9, #8fb9b6); color: #1E2D2F; }
+    #about-button { background: linear-gradient(135deg, #D3D4CC, #b9bab3); color: #241909; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Healthy Eating</h1>
-        <div class="button-container">
-            <a href="scan.html" class="app-button" id="scan-button">Scan</a>
-            <a href="search.html" class="app-button" id="search-button">Search</a>
-            <a href="research.html" class="app-button" id="research-button">Research</a>
-            <a href="my-body.html" class="app-button" id="my-body-button">My Body</a>
-            <a href="about.html" class="app-button" id="about-button">About</a>
-        </div>
+  <div class="container">
+    <h1>Healthy Eating</h1>
+    <p class="subtitle">Your personalized guide to smarter choices</p>
+    
+    <div class="button-container">
+      <a href="scan.html" class="app-button" id="scan-button">📷 Scan Ingredients</a>
+      <a href="search.html" class="app-button" id="search-button">🔍 Search Foods</a>
+      <a href="research.html" class="app-button" id="research-button">📑 Research</a>
+      <a href="my-body.html" class="app-button" id="my-body-button">💪 My Body</a>
+      <a href="about.html" class="app-button" id="about-button">ℹ️ About</a>
     </div>
+  </div>
 </body>
 </html>
