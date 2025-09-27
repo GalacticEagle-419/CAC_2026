@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header a {
+            text-decoration: none;
+            color: #555;
+            font-size: 24px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 5px;
+        }
+        .search-icon {
+            font-size: 20px;
+            color: #888;
+            margin-left: 10px;
+        }
+        .research-content {
+            text-align: left;
+            padding-top: 10px;
+            color: #333;
+        }
+        .research-content p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">🏠</a>
+            <a href="#" onclick="history.back()">🔙</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="What are you looking for?">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="research-content">
+            <p>
+                (LLM-generated response, healthcare, nutrition related will appear here)
+            </p>
+            <p>___________________________</p>
+            <p>___________________________</p>
+            <p>___________________________</p>
+            <p>___________________________</p>
+        </div>
+    </div>
+</body>
+</html>
+
