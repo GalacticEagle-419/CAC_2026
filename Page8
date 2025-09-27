@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition: Diabetes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header a {
+            text-decoration: none;
+            color: #555;
+            font-size: 24px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .content-section h3 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .content-section p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">🏠</a>
+            <a href="filter-conditions.html">🔙</a>
+        </div>
+        <h2>Condition: Diabetes</h2>
+
+        <div class="content-section">
+            <h3>Nutrition Advice for Diabetes:</h3>
+            <p>
+                (LLM-generated nutrition advice for the condition will be displayed here.)
+            </p>
+            <p>
+                Managing diabetes through diet involves balancing macronutrients, choosing foods with a low glycemic index, and monitoring carbohydrate intake. A diet rich in fiber, lean proteins, and healthy fats is often recommended to help control blood sugar levels.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h3>How this changes your recommendations:</h3>
+            <p>
+                (Explanation of how the app's recommendations are adjusted will be displayed here.)
+            </p>
+            <p>
+                Based on your condition, the app will now prioritize ingredients that help regulate blood sugar. It will flag foods high in simple sugars and refined carbohydrates and suggest healthier alternatives. The overall health value will also be calculated with a greater emphasis on these factors.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
