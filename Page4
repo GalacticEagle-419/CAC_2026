@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Ingredients</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header a {
+            text-decoration: none;
+            color: #555;
+            font-size: 24px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 5px;
+        }
+        .search-icon {
+            font-size: 20px;
+            color: #888;
+            margin-left: 10px;
+        }
+        .ingredient-list {
+            text-align: left;
+        }
+        .ingredient-item {
+            display: block;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.2s;
+        }
+        .ingredient-item:hover {
+            background-color: #f9f9f9;
+        }
+        .ingredient-item:first-child {
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">🏠</a>
+            <a href="#" onclick="history.back()">🔙</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for any ingredient...">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="ingredient-list">
+            <a href="ingredient-x.html" class="ingredient-item">
+                Ingredient A
+            </a>
+            <a href="ingredient-x.html" class="ingredient-item">
+                Ingredient B
+            </a>
+            <a href="ingredient-x.html" class="ingredient-item">
+                Ingredient C
+            </a>
+            <a href="ingredient-x.html" class="ingredient-item">
+                Ingredient D
+            </a>
+        </div>
+    </div>
+</body>
+</html>
